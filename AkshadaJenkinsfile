@@ -22,4 +22,5 @@ pipeline {
       publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, icon: '', includes: '\'/var/lib/jenkins/workspace/Insure-Me/target/surefire-reports\'', keepAll: false, reportDir: '', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])  }      
   }
   }
+}
    
