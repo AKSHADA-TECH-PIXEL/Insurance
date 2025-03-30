@@ -22,5 +22,11 @@ pipeline {
       publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, icon: '', includes: '\'/var/lib/jenkins/workspace/Insure-Me/target/surefire-reports\'', keepAll: false, reportDir: '', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])  }      
   }
   }
+  stage('Create a Docker image from the Package Insure-Me.jar file') {
+      steps {
+       sh '''docker build -t AKSHADA-TECH-PIXEL /Insurance .
+                    }
+            }
+     
 }
    
